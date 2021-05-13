@@ -1,0 +1,274 @@
+[
+  
+  {
+    "title": "Shopify subcollection",
+    "url": "/codenotes/posts/subcollection-shopify/",
+    "categories": "Snippets, Shopify Snippets",
+    "tags": "Javascript",
+    "date": "2020-05-07 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "&amp;lt;div class=&quot;page-width custom-subcollections text-center&quot;&amp;gt;{% for link in linklists[settings.structure].links %}&amp;lt;h1 class=&quot;collection-title&quot;&amp;gt;{{link.title}}&amp;lt;/h1&amp;gt;&amp;lt;hr&amp;gt;&amp;lt;div class=&quot;grid&quot;&amp;gt; {% for childlin..."
+  },
+  
+  {
+    "title": "Lighthouse Audit",
+    "url": "/codenotes/posts/lighthouse-audit/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-05-06 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Audit website with Lighthouse and save to CSVlighthouse-auditgatherAuditData(&#39;www.benline.co.uk&#39;, 100);  websiteAudit  gatherAuditDataView Repo"
+  },
+  
+  {
+    "title": "yoWaybackScraper",
+    "url": "/codenotes/posts/yoWaybackScraper/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "scrapes given url on wayback and returns .txt of all saved versions.npm install @benline/yoWaybackScraperconst waybackScraper = new yoWaybackScraper(&quot;example.com&quot;)waybackScraper.getTimeMap()can override the url and filename via passing obj into getTimeMap()waybackScraper.getTimeMap({url..."
+  },
+  
+  {
+    "title": "yoSocialBlade",
+    "url": "/codenotes/posts/yoSocialBlade/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Get metrics from socialBlade no APInpm install @benline/yoSocialBladeUsage:blSocialBlade(&#39;UC-lHJZR3Gqxm24_Vd_AJ5Yw&#39;).then(function (metrics) {    console.log(metrics)})Full script:import * as fakeUa from &quot;fake-useragent&quot;;import { get } from &quot;request&quot;;// import * as che..."
+  },
+  
+  {
+    "title": "yoShopifyGraphqlClient",
+    "url": "/codenotes/posts/yoShopifyGraphqlClient/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "npm install @benline/yoShopifyGraphqlClientShopify Storefront Graphql Client Packageimport yoShopifyGraphqlClient, { fetchProducts } from &quot;@benline/yoShopifyGraphqlClient&quot;;const makeMeAShopifyClient = yoShopifyGraphqlClient(&quot;Your Shopify URL&quot;, &quot;YOUR ACCESS TOKEN&quot;); m..."
+  },
+  
+  {
+    "title": "yoScriptTagCheck",
+    "url": "/codenotes/posts/yoScriptTagCheck/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "yoScriptTagCheckimport { createClient, fetchExchange } from &quot;urql&quot;;import gql from &quot;graphql-tag&quot;;interface SCRIPTTAGCHECK {    shop: string,     accessToken: number}export const getScriptTags = gql`  query getScriptTags {    scriptTags(first: 10) {      edges {        node {  ..."
+  },
+  
+  {
+    "title": "yoRandomColour",
+    "url": "/codenotes/posts/yoRandomColour/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Generate random colour from hexnpm install @benline/yoRandomColourconst hexes = [ &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot..."
+  },
+  
+  {
+    "title": "yoPostShopifyGraphQL",
+    "url": "/codenotes/posts/yoPostShopifyGraphQL/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Posting to Shopfiy Via GraphQLInstall:npm install @benline/yoPostShopifyGraphQLUsuage:const results = await postShopifyGraphQL(query);import axios from &#39;axios&#39;;export const postShopifyGraphQL = (query:any) =&amp;gt; {  return new Promise&amp;lt;any&amp;gt;((resolve, reject) =&amp;gt; {   ..."
+  },
+  
+  {
+    "title": "yoGetRandomString",
+    "url": "/codenotes/posts/yoGetRandomString/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "npm install @benline/yoGetRandomStringGet random string module for react thingy.const getRandomString = (length:any, chars:any) =&amp;gt; {    let mask = &#39;&#39;;    if (chars.indexOf(&#39;a&#39;) &amp;gt; -1) mask += &#39;abcdefghijklmnopqrstuvwxyz&#39;;    if (chars.indexOf(&#39;A&#39;) &amp..."
+  },
+  
+  {
+    "title": "viewportUtil",
+    "url": "/codenotes/posts/viewportUtil/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Utils for the viewportimport viewportUtil from &#39;@benline/viewportUtil&#39;;// or import what you wantimport { isTheElementInViewPort } from &#39;@benline/viewportUtil&#39;isTheElementInViewPort()Tests a single element for visibility within the viewport.callElementsInViewport()Tests all tracke..."
+  },
+  
+  {
+    "title": "simplel10n",
+    "url": "/codenotes/posts/simplel10n/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "A really simple l10n classnpm install @benline/simplel10n//You would have some keys and valuesvar language = {  en: {    HELLO: &#39;Hello&#39;,  },  fr: {    HELLO: &#39;Bonjour&#39;,  }}const currentLang = new l10n();currentLang.getTranslationStr(&quot;HELLO&quot;)currentLang.setLanguage(&#39;d..."
+  },
+  
+  {
+    "title": "sessionUtils",
+    "url": "/codenotes/posts/sessionUtils/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Utils for working with SessionsFunctions  Get storage  Set storage  Clear storage  Get expiration timestamp  Set expiration timestamp  Norm the timestamp  is session valid  check when session expiresView Repo"
+  },
+  
+  {
+    "title": "isUtil",
+    "url": "/codenotes/posts/isUtil/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "npm install @benline/isUtilimport { isNullOrUndefined, isObject } from &#39;@benline/isUtil&#39;;Available is utils to import  isNullOrUndefined  isObject  sNumber  isString  isBoolean  isFunction  isArray  isWeakMap  isNodeList  isElement  isTextNode  isEvent  isKeyboardEvent  isCue  isTrack  is..."
+  },
+  
+  {
+    "title": "isJqueryVersionBad",
+    "url": "/codenotes/posts/isJqueryVersionBad/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "Check if the Jquery version is bad or If the Shopify functionality requires Jquery, use this.View Repo"
+  },
+  
+  {
+    "title": "instagramFeed",
+    "url": "/codenotes/posts/instagramFeed/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "React instagram feednpm install @benline/instagramFeedA simple react instagram feed  token - Graphql token  counter - Number of items  instagramstyles.module.css - Some basic stylesimport { InstagramFeed } from &quot;@benline/instagramFeed&quot;; &amp;lt;InstagramFeed token=&quot;&quot; counter=&..."
+  },
+  
+  {
+    "title": "genUtil",
+    "url": "/codenotes/posts/genUtil/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "import genUtil from &#39;@benline/genUtil&#39;; // or import what you needimport { all, debounce } from &quot;@benline/genUtil&quot;;AllBuild a macro-promise for all given promises. This is useful when waiting on multiple state resolutions, allowing multiple promises to be tracked by an aggregate..."
+  },
+  
+  {
+    "title": "DOM",
+    "url": "/codenotes/posts/DOM/",
+    "categories": "Projects, Javascript Projects",
+    "tags": "Javascript",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "stringToHtmlConverts string to DOM nodes.arrayFromNodeListTurns a NodeList into a proper array and returns the array.withNodeListAllows a function to be execute over a list of nodes, a node, or a stringAppendInsert content, specified by the parameter, to the end of parent element.PrependPrepend c..."
+  },
+  
+  {
+    "title": "BuildKit V1",
+    "url": "/codenotes/posts/BuildKitV1/",
+    "categories": "Projects, CSS Projects",
+    "tags": "CSS",
+    "date": "2020-03-31 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "🚧 Will make better at some point by passing include vars into the includes.Beighton Development Kit 1See demo  FULL KIT  NAVBARS  COVERS  ARTICLES  ACTIONS  FEATURES  GALLERIES  TESTIMONIALS  TEAMS  PRICING  FORMS  FOOTERS  GRID  TEXT  MEDIA  BUTTONS  NAVS  LISTS  CARDSView Repo"
+  }
+  
+]
+

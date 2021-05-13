@@ -1,0 +1,274 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/codenotes/</id>
+  <title>Ben Line</title>
+  <subtitle></subtitle>
+  <updated>2021-05-13T09:20:20+08:00</updated>
+  <author>
+    <name>Ben Line</name>
+    <uri>/codenotes/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/codenotes/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en-US"
+    href="/codenotes/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Ben Line </rights>
+  <icon>/codenotes/assets/img/favicons/favicon.ico</icon>
+  <logo>/codenotes/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Shopify subcollection</title>
+    <link href="/codenotes/posts/subcollection-shopify/" rel="alternate" type="text/html" title="Shopify subcollection" />
+    <published>2020-05-07T00:00:00+08:00</published>
+  
+    <updated>2020-05-07T00:00:00+08:00</updated>
+  
+    <id>/codenotes/posts/subcollection-shopify/</id>
+    <content src="/codenotes/posts/subcollection-shopify/" />
+    <author>
+      <name>Ben Line</name>
+    </author>
+
+  
+    
+    <category term="Snippets" />
+    
+    <category term="Shopify Snippets" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+&amp;lt;div class="page-width custom-subcollections text-center"&amp;gt;
+{% for link in linklists[settings.structure].links %}
+&amp;lt;h1 class="collection-title"&amp;gt;{{link.title}}&amp;lt;/h1&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;div class="grid"&amp;gt;
+ {% for childlink in link.links %}
+	&amp;lt;div class="grid__item medium-up--one-third text-center"&amp;gt;
+    	&amp;lt;div class="item-wrapper"&amp;gt;
+  {% case childlink.type %}
+  	
+  	{% when...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Lighthouse Audit</title>
+    <link href="/codenotes/posts/lighthouse-audit/" rel="alternate" type="text/html" title="Lighthouse Audit" />
+    <published>2020-05-06T00:00:00+08:00</published>
+  
+    <updated>2020-05-06T00:00:00+08:00</updated>
+  
+    <id>/codenotes/posts/lighthouse-audit/</id>
+    <content src="/codenotes/posts/lighthouse-audit/" />
+    <author>
+      <name>Ben Line</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Javascript Projects" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Audit website with Lighthouse and save to CSV
+
+lighthouse-audit
+
+gatherAuditData('www.benline.co.uk', 100);
+
+
+
+  websiteAudit
+  gatherAuditData
+
+
+View Repo
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>yoWaybackScraper</title>
+    <link href="/codenotes/posts/yoWaybackScraper/" rel="alternate" type="text/html" title="yoWaybackScraper" />
+    <published>2020-03-31T00:00:00+08:00</published>
+  
+    <updated>2020-03-31T00:00:00+08:00</updated>
+  
+    <id>/codenotes/posts/yoWaybackScraper/</id>
+    <content src="/codenotes/posts/yoWaybackScraper/" />
+    <author>
+      <name>Ben Line</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Javascript Projects" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      scrapes given url on wayback and returns .txt of all saved versions.
+
+npm install @benline/yoWaybackScraper
+
+const waybackScraper = new yoWaybackScraper("example.com")
+waybackScraper.getTimeMap()
+
+
+can override the url and filename via passing obj into getTimeMap()
+
+waybackScraper.getTimeMap({url: "newurl.com", name: "newfilename"})
+
+
+View Repo
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>yoSocialBlade</title>
+    <link href="/codenotes/posts/yoSocialBlade/" rel="alternate" type="text/html" title="yoSocialBlade" />
+    <published>2020-03-31T00:00:00+08:00</published>
+  
+    <updated>2020-03-31T00:00:00+08:00</updated>
+  
+    <id>/codenotes/posts/yoSocialBlade/</id>
+    <content src="/codenotes/posts/yoSocialBlade/" />
+    <author>
+      <name>Ben Line</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Javascript Projects" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Get metrics from socialBlade no API
+
+npm install @benline/yoSocialBlade
+
+Usage:
+
+blSocialBlade('UC-lHJZR3Gqxm24_Vd_AJ5Yw').then(function (metrics) {
+    console.log(metrics)
+})
+
+
+Full script:
+
+import * as fakeUa from "fake-useragent";
+import { get } from "request";
+// import * as cheerio from "cheerio";
+import { load } from "cheerio";
+import * as _ from "lodash";
+
+// SocialBlade API that doesn'...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>yoShopifyGraphqlClient</title>
+    <link href="/codenotes/posts/yoShopifyGraphqlClient/" rel="alternate" type="text/html" title="yoShopifyGraphqlClient" />
+    <published>2020-03-31T00:00:00+08:00</published>
+  
+    <updated>2020-03-31T00:00:00+08:00</updated>
+  
+    <id>/codenotes/posts/yoShopifyGraphqlClient/</id>
+    <content src="/codenotes/posts/yoShopifyGraphqlClient/" />
+    <author>
+      <name>Ben Line</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Javascript Projects" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      npm install @benline/yoShopifyGraphqlClient
+
+Shopify Storefront Graphql Client Package
+
+
+import yoShopifyGraphqlClient, { fetchProducts } from "@benline/yoShopifyGraphqlClient";
+
+
+
+
+const makeMeAShopifyClient = yoShopifyGraphqlClient("Your Shopify URL", "YOUR ACCESS TOKEN"); 
+
+makeMeAShopifyClient.query({query: fetchProducts}).then(({data}) =&amp;gt; {
+    const products = data.shop.products.edges;...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
